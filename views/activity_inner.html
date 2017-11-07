@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NTCUSTSA - XXX</title>
+  <link rel="stylesheet" href="../style/reset.css">
+  <link rel="stylesheet" href="../style/normalize.css.css">
+  <link rel="stylesheet" href="../style/main.css">
+  <link rel="stylesheet" href="../style/response.css">
+  <script src="../script/jquery-1.11.2.min.js"></script>
+  <script src="../script/jquery.unevent.js"></script>
+  <script src="../script/jquery.easing.1.3.js"></script>
+  <script src="../script/jquery.scrollTo.min.js"></script>
+</head>
+
+<body>
+  <div id="wrap">
+    <div id="container">
+      <script>
+        var navTop = 0;
+        $(document).ready(function() {
+          toTopLocate(2);
+          $('#toTop').click(function() {
+            $(window).scrollTo('0px', 300, {
+              easing: 'easeInOutQuart'
+            });
+          });
+          $('#mn-button-box').click(function() {
+            $('#mn-button').toggleClass('mn-change');
+            $('#mn-box').toggleClass('mn-switch');
+          });
+        });
+        $(window).on('resize', function(e) {
+          toTopLocate(2);
+        }, 300);
+        $(window).on('scroll', function(e) {
+          toTopLocate(0);
+        }, 300);
+
+        function toTopLocate(x) {
+          if (x == 2) navTop = parseInt($('#header').offset().top + $('#header').height());
+          if (parseInt($(window).scrollTop()) >= navTop && $('#toTop.zoomAnimate').length <= 0) x = 1;
+          else if (parseInt($(window).scrollTop()) < navTop && $('#toTop.zoomAnimate').length > 0) x = -1;
+          if (x < 0) $('#toTop').removeClass('zoomAnimate');
+          else if (x > 0) $('#toTop').addClass('zoomAnimate');
+        }
+
+      </script>
+      <button type="buttom" id="toTop" class="zoomAnimate">To Top</button>
+      <div id="wrap-inner">
+        <div id="header">
+          <div id="logo">
+            <div id="logo-inner"><img src="../img/banner.png" alt></div>
+          </div>
+          <div id="nav">
+            <div id="miniNav-wrap">
+              <button id="mn-button-box" type="button"><div id="mn-button"></div></button>
+              <div class="mn-switch" id="mn-box">
+                <div class="mn-item">
+                  <a href="main.html">
+										<span class="mn-tc">首頁</span>
+										<span class="mn-eng">HOME</span>
+									</a>
+                </div>
+                <hr>
+                <div class="mn-item">
+                  <a href="news.html">
+										<span class="mn-tc">最新消息</span>
+										<span class="mn-eng">NEWS</span>
+									</a>
+                </div>
+                <hr>
+                <div class="mn-item">
+                  <a href="intro.html">
+										<span class="mn-tc">學生會簡介</span>
+										<span class="mn-eng">INTRO</span>
+									</a>
+                </div>
+                <hr>
+                <div class="mn-item">
+                  <a href="activity.html">
+										<span class="mn-tc">活動專區</span>
+										<span class="mn-eng">ACTIVITY</span>
+									</a>
+                </div>
+              </div>
+            </div>
+            <div id="nav-wrap">
+              <div class="n-item">
+                <a href="main.html">
+									<span class="n-tc">首頁</span>
+									<span class="n-eng">HOME</span>
+								</a>
+              </div>
+              <div class="n-item">
+                <a href="news.html">
+                  <span class="n-tc">最新消息</span>
+                  <span class="n-eng">NEWS</span>
+                </a>
+              </div>
+              <div class="n-item">
+                <a href="intro.html">
+									<span class="n-tc">學生會簡介</span>
+									<span class="n-eng">INTRO</span>
+								</a>
+                <div class="n-list">
+                  <div class="n-l-item"><a href="intro_inner.html#it-label-0">會長/副會長</a></div>
+                  <div class="n-l-item"><a href="intro_inner.html#it-label-1">資訊部</a></div>
+                  <div class="n-l-item"><a href="intro_inner.html#it-label-2">公關部</a></div>
+                  <div class="n-l-item"><a href="intro_inner.html#it-label-3">秘書部</a></div>
+                  <div class="n-l-item"><a href="intro_inner.html#it-label-4">財務部</a></div>
+                  <div class="n-l-item"><a href="intro_inner.html#it-label-5">活動部</a></div>
+                  <div class="n-l-item"><a href="intro_inner.html#it-label-6">學務部</a></div>
+                </div>
+              </div>
+              <div class="n-item n-now">
+                <div>
+                  <span class="n-tc">活動專區</span>
+                  <span class="n-eng">ACTIVITY</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="content">
+          <div id="main">
+            <div class="frame">
+              <h1 class="page-title">活動專區<span class="p-t-sub">XXX</span></h1>
+              <div class="frm-db">
+                <h2 class="page-subject">XXX</h2>
+                <div class="frm-db-function"></div>
+                <div class="frm-db-datetime">WED Apr 9th,2015</div>
+                <div class="frm-db-content">
+                  <p>Do excepteur adipisicing incididunt esse et nisi adipisicing officia nisi. Mollit occaecat non nostrud dolor mollit. Excepteur officia proident sit mollit id velit irure qui elit deserunt veniam velit nisi. Velit cillum pariatur ipsum duis proident ullamco sint laboris velit culpa. In fugiat veniam adipisicing voluptate aliqua adipisicing occaecat fugiat reprehenderit proident consectetur sit deserunt. Commodo aute deserunt tempor mollit.</p>
+                  <img src="../img/demo.jpg" alt="">
+                  <p>Pariatur enim et anim laborum nisi ipsum velit. Aliquip ut anim sint sit velit incididunt. Dolore veniam ut esse ullamco adipisicing laboris excepteur amet irure consectetur officia est. Laborum commodo dolor qui anim tempor mollit ex tempor eu aute. Eiusmod amet veniam id irure sunt aliqua ipsum culpa ad irure eiusmod. Fugiat fugiat sunt ut consequat ullamco ex aliquip enim aute aliquip duis velit do.</p>
+                  <p>Eiusmod culpa qui non velit mollit officia labore consectetur ullamco irure fugiat aliqua nulla. In fugiat ut sit id fugiat duis mollit. Elit pariatur aliquip minim eiusmod ad consectetur culpa labore ea ut quis duis occaecat cupidatat. Irure exercitation est magna eiusmod eiusmod cupidatat commodo commodo elit consequat Lorem id aliqua proident. Dolor tempor pariatur ad nulla consectetur ut proident sint.</p>
+                </div>
+                <div class="frm-db-function"></div>
+                <div class="frm-db-others">
+                  <div>其他相關活動：</div>
+                  <div class="frm-db-others-list">
+                    <div class="frm-db-others-list-item">0asd32vasddfasd32vasddfasd32vasddfasd32vasdd</div>
+                    <div class="frm-db-others-list-item">1asd32vasddfasd32vasddfasd32vasddfasd32vasdd</div>
+                    <div class="frm-db-others-list-item">2asd32vasddfasd32vasddfasd32vasddfasd32vasdd</div>
+                    <div class="frm-db-others-list-item">3asd32vasddfasd32vasddfasd32vasddfasd32vasddasd32vasddfasd32vasddfasd32vasddfasd32vasdd</div>
+                    <div class="frm-db-others-list-item">4asd32vasddfasd32vasddfasd32vasddfasd32vasdd</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer-wrap">
+        <div id="footer">
+          <div id="f-copy">Copyright&nbsp;&copy;&nbsp;國立臺中科技大學學生會</div>
+          <div id="f-link">
+            <div class="f-l-item"><a href="#!">網站地圖</a></div>
+            <span class="f-sep">|</span>
+            <div class="f-l-item"><a href="http://www.nutc.edu.tw/bin/home.php" rel="noopener nofollow noreferer">台中科技大學首頁</a></div>
+            <span class="f-sep">|</span>
+            <div class="f-l-item"><a href="http://student.nutc.edu.tw/bin/home.php" rel="noopener nofollow noreferer">學生事務處</a></div>
+            <span class="f-sep">|</span>
+            <div class="f-l-item"><a href="http://lib.nutc.edu.tw/bin/home.php" rel="noopener nofollow noreferer">圖書館</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

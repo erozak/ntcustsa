@@ -1,0 +1,198 @@
+#main ,
+#i-contact ,
+#footer ,
+.it-figbox img ,
+.frm-is-item { transition: width .3s ease-in-out; }
+#i-contact .frm-tcl-left ,
+#i-contact .frm-tcl-right ,
+.f-l-item ,
+.frm-ln-aside ,
+.frm-ln-aside>.aside>li ,
+.it-title ,
+.it-name ,
+.it-figbox ,
+.frm-db-others-list-item {
+	transition: width .3s ease-in-out ,
+				margin .3s ease-in-out;
+}
+.list-subj ,
+.frm-ln-aside>.aside ,
+.frm-ln-aside>.aside>li>a ,
+.frm-ln-aside>.aside>li.a-now ,
+.frm-ln-right ,
+.it-content ,
+.frm-itemShow ,
+.frm-db ,
+.frm-db-others ,
+#e-enter ,
+#e-header { transition: padding .3s ease-in-out; }
+#frm-pg-first ,
+#frm-pg-last ,
+.frm-page-now ,
+.frm-page ,
+#e-click , {
+	transition: padding .3s ease-in-out ,
+				font-size .3s ease-in-out;
+}
+#e-t-tc ,
+#e-t-eng {
+	transition: font-size .3s ease-in-out ,
+				line-height .3s ease-in-out;
+}
+#e-hbox { transition: margin .3s ease-in-out; }
+/*----------------------------------------------------------------*/
+@media screen and (max-width: 1170px) {
+	#main { width: 95%; }
+}
+@media screen and (max-width: 900px) {
+	#i-contact { width: 98%; }
+}
+@media screen and (max-width: 815px) {
+	#i-contact .frm-tcl-left ,
+	#i-contact .frm-tcl-right {
+		float: none;
+		display: block;
+		margin: 10px auto;
+		width: 90%;
+	}
+	.frm-ln-aside {
+		float: none;
+		display: block;
+		margin: 0 auto 15px;
+		width: 100%;
+	}
+	.frm-ln-aside>.aside { padding: 0 5px; }
+	.frm-ln-aside>.aside>li {
+		display: inline-block;
+		margin: 5px;
+		border-width: 1px;
+	}
+	.frm-ln-aside>.aside>li>a { padding: 15px 10px 15px 26px; }
+	.frm-ln-aside>.aside>li.a-now {
+		border: 1px solid rgba(0,0,0,.1);
+		padding: 15px 10px 15px 26px;
+	}
+	.frm-ln-right { padding: 0; }
+}
+@media screen and (max-width: 720px) {
+	.frm-is-item { width: 48%; }
+}
+@media screen and (max-width: 655px) {
+	#main .frm-tcl-left ,
+	#main .frm-tcl-right {
+		float: none;
+		display: block;
+		margin: 15px auto;
+		width: 95%;
+	}
+	#e-t-tc {
+		font-size: 2rem;
+		line-height: 2rem;
+	}
+	#e-t-eng {
+		font-size: 1.2rem; 
+		line-height: 1.2rem;
+	}
+	#e-click {
+		font-size: 1rem;
+		margin-right: 13%;
+	}
+}
+@media screen and (max-width: 585px) {
+	.it-title ,
+	.it-name {
+		margin: 10px auto 25px;
+		width: 100%;
+		font-weight: bold;
+	}
+	.it-figbox {
+		float: none;
+		display: block;
+		margin: 5px auto;
+		width: 100%;
+	}
+	.it-figbox img { width: 80%; }
+	.it-content { padding: 0 10px; }
+}
+@media screen and (max-width: 535px) {
+	#nav-wrap { display: none; } /* Nav Change */
+	#miniNav-wrap { display: block; }
+	#footer { width: 96%; }
+	#i-contact .frm-tcl-left ,
+	#i-contact .frm-tcl-right { width: 95%; }
+}
+@media screen and (max-width: 500px) {
+	.f-sep { display: none; }
+	.f-l-item {
+		margin: 5px 3px;
+		padding: 0;
+	}
+	.list-subj {
+		float: none;
+		display: block;
+		padding: 5px 0;
+		width: auto;
+		text-align: left;
+	}
+	.frm-itemShow ,
+	.frm-db { padding: 0 5px; }
+	.frm-db-others { padding: 5px 5px 0; }
+	.frm-is-item ,
+	.frm-db-others-list-item {
+		display: block;
+		margin: 15px auto;
+		width: 100%;
+	}
+	.frm-is-item:nth-of-type(1) { margin-top: 0; }
+}
+@media screen and (max-width: 450px) {
+	.frm-ln-aside>.aside { padding: 0 10px; }
+	.frm-ln-aside>.aside>li {
+		display: block;
+		margin: 0 auto;
+		border-width: 1px 1px 0;
+	}
+	.frm-ln-aside>.aside>li.a-now { border-width: 0; }
+	.frm-ln-aside>.aside>li:nth-last-of-type(1) { border-bottom-width: 1px; }
+}
+@media screen and (max-width: 400px) {
+	#frm-pg-first ,
+	#frm-pg-last { font-size: .6rem; }
+	#frm-pg-first { padding-right: 5px; }
+	#frm-pg-last { padding-left: 5px; }
+	.frm-page-now ,
+	.frm-page {
+		padding: 5px;
+		font-size: .8rem;
+	}
+	#e-t-tc {
+		font-size: 1.4rem;
+		line-height: 1.4rem;
+	}
+	#e-t-eng {
+		font-size: .9rem; 
+		line-height: .9rem;
+	}
+	#e-click {
+		font-size: .8rem;
+		margin-right: 8%;
+	}
+}
+
+/*------------------------------------*/
+@media screen and (max-height: 630px) {
+	#e-header { padding-top: 15px; }
+	#e-hbox { margin: 0 auto; }
+	#e-enter { padding-top: 130px; }
+}
+@media screen and (min-width: 400px) and (max-height: 585px) {
+	#e-enter { padding-top: 110px; }
+	#e-t-tc {
+		font-size: 2rem;
+		line-height: 2rem;
+	}
+	#e-t-eng {
+		font-size: 1.2rem; 
+		line-height: 1.2rem;
+	}
+}
